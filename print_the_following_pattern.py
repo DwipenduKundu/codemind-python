@@ -1,8 +1,8 @@
-a=int(input(""))
-for i in range(a):
-    for j in range(a):
-        if((i==j)|(i==a-j-1)):
-            print("x",end="")
+n=int(input())
+for i in range(n):
+    for j in range(n):
+        if j==i or j==(n-1) or j==0:
+            print("*",end=" ")
         else:
-            print("0",end="")
-    print("")
+            print("  ",end="")
+    print()
