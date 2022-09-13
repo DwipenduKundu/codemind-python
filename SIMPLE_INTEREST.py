@@ -1,2 +1,6 @@
-p,t,r=input().split()
-print(int((int(p)*int(t)*int(r))/100))
+p,r,t=input().split()
+p=int(p)
+r=int(r)
+t=int(t)
+si=p*r*t//100
+print(si)
