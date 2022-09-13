@@ -1,2 +1,3 @@
 r=int(input())
-print("{:.2f}".format(3.14*r*r))
+a=3.14*r*r
+print("{:.2f}".format(a))
