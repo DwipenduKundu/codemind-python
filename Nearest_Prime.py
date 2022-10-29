@@ -1,4 +1,4 @@
-# previous prime:
+# nearest prime:
 a=int(input())
 for j in range(a):
     x=int(input())
@@ -24,11 +24,7 @@ for j in range(a):
             l2=np
             break;
         np-=1
-    if abs(x-l1)>abs(x-l2):
+    if abs(x-l1)>=abs(x-l2):
         print(l2)
-    elif abs(x-l1)<abs(x-l2):
+    else:
         print(l1)
-    elif abs(x-l1)==abs(x-l2) and l1<l2:
-        print(l1)
-    elif abs(x-l1)==abs(x-l2) and l1>l2:
-        print(l2)
