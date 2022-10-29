@@ -1,6 +1,6 @@
-n=int(input())
-m=int(input())
-x=n+m
+a=int(input())
+b=int(input())
+x=a+b
 np=x+1
 while True:
     is_prime=True
