@@ -1,7 +1,12 @@
 n=int(input())
-c=chr(64+n)
-for i in range(n,0,-1):
-    for j in range(1,i+1):
-        print(c,end=" ")
-    c=chr(ord(c) - 1)
+l=1
+for i in range(n):
+    for j in range(n):
+        if j>n-i-2:
+            print(l,end='')
+        else:
+            print(' ',end='')
+    for k in range(i):
+        print(l,end='')
+    l+=1
     print()
