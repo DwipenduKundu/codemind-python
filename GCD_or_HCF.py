@@ -1,11 +1,10 @@
-# Extended Euclid's algorithm to find out GCD of two given number
 a,b=map(int,input().split())
 while a!=0 and b!=0:
     if a>b:
         a%=b
-    elif b>a:
+    else:
         b%=a
-if a==0:
-    print(b)
-else:
+if a!=0:
     print(a)
+else:
+    print(b)
