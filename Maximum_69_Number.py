@@ -1,13 +1,11 @@
-num=input()
-l=len(num)
-arr=[]
-temp=int(num)
-for i in range(l):
-    arr.append(temp%10)
-    temp=temp//10
-for i in range(l):
-    if arr[l-i-1]==6:
-        arr[l-i-1]=9
-        break
-for i in range(l):
-    print(arr[l-i-1],end="")
+def maximumNumber(num):
+    num_str = str(num)
+    for i in range(len(num_str)):
+        if num_str[i] == '6':
+            num_str = num_str[:i] + '9' + num_str[i+1:]
+            break
+    max_num = int(num_str)
+    return max_num
+num = int(input())
+result = maximumNumber(num)
+print(result)
