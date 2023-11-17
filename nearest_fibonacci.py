@@ -1,16 +1,19 @@
-a,b=0,1
-x=int(input())
-for i in range(x):
-    c=a+b
-    t=b
-    b=a+b
-    a=t
-    if abs(x-b)<=abs(x-a):
-        f=b
-    if abs(x-b)==abs(x-a):
-        f=b
-        l=a
-if abs(x-f)!=abs(x-l):
-    print(f)
-else:
-    print(l,f)
+def nearestFibonacci(num):
+	if (num == 0):
+		print(0)
+		return
+	first = 0
+	second = 1
+	third = first + second
+	while (third <= num):
+		first = second
+		second = third
+		third = first + second
+	if (abs(third - num) ==	abs(second - num)):
+		print(second,third)
+	elif (abs(third - num) >=	abs(second - num)):
+		print(second)
+	else:
+		print(third)
+N = int(input())
+nearestFibonacci(N)
